@@ -10,8 +10,10 @@ namespace seminar_6
     internal class Program
     {
         public static void Main()
-        {
-            Task1.Method1();
+        { 
+
+            Console.ReadLine();
         }
+
     }
 }
