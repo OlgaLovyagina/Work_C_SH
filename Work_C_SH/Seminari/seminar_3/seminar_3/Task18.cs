@@ -28,6 +28,18 @@ namespace seminar_3
         /// <param name="number"></param>
         static void CheckNam(int number)
         {
+            /*
+            switch (number)
+            {
+                case 1:
+                    Console.WriteLine("x > 0, y > 0");
+                    break;
+                case 2:
+                    Console.WriteLine("x < 0, y > 0");
+                    break;
+            }
+            */
+
             if (number == 1)
             {
                 Console.WriteLine("x > 0, y > 0");

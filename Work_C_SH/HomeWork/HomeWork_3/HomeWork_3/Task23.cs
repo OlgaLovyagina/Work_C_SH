@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeWork_3
 {
-    // <summary>
+    /// <summary>
     /// Напишите программу, которая принимает на
     ///вход число(N) и выдаёт таблицу кубов чисел от 1 до N.
     /// </summary>

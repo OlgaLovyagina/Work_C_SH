@@ -7,16 +7,18 @@ using System.Threading.Tasks;
 namespace HomeWork_5
 {
     /// <summary>
-    /// Задайте массив заполненный случайными положительными трёхзначными числами.
-    /// Напишите программу, которая покажет количество чётных чисел в массиве.
+    /// Задайте одномерный массив, заполненный
+    /// случайными числами. Найдите сумму элементов с
+    /// нечётными индексами.
     /// </summary>
-    internal class Task34
+    internal class Task36
     {
         /// <summary>
         /// Запуск задачи 
         /// </summary>
         public static void Run()
         {
+
             int size = 10;
             int[] numbers = new int[size];
             Console.WriteLine("Размер массива: " + size);
@@ -24,12 +26,12 @@ namespace HomeWork_5
             FillArrey(numbers);
             PrintArrey(numbers);
 
-            int counter = 0;
-            for (int i = 0; i < size; i++)
-            {              
-                if (numbers[i] % 2 == 0) counter++;               
+            int sum = 0;
+            for (int i = 1; i < size; i+=2)
+            {
+             sum = sum + numbers[i];                
             }
-            Console.WriteLine("Четных элементов : " + counter);
+            Console.WriteLine("Сумма элементов с нечетными индексами :" + sum);
 
 
             /// <summary>
@@ -59,6 +61,7 @@ namespace HomeWork_5
                 Console.WriteLine();
 
             }
+
 
         }
     }
