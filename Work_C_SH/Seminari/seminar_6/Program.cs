@@ -1,19 +1,24 @@
-﻿using seminar_6.Core;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
 namespace seminar_6
 {
+
     internal class Program
     {
+        
         public static void Main()
-        { 
+
+        {
+            // Task39.Run();
+            //Task40.Run();
+            //Task42.Run();
+            //Task44.Run();
+            Task45.Run();
 
             Console.ReadLine();
-        }
-
+        }     
     }
 }
+
+
+
