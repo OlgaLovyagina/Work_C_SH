@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using HomeWork_7;
+
+//Task47.Run();
+Task50.Run();
+//Task52.Run();

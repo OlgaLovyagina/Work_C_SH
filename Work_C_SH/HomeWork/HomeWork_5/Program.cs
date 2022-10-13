@@ -1,8 +1,8 @@
 ﻿using HomeWork_5;
 
 //Task25_1.Run(); // исправила ошибку 
-//Task34.Run();
-//Task36.Run();
+Task34.Run();
+Task36.Run();
 Task38.Run();
 
 
