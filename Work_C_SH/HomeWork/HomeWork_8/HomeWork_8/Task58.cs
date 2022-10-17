@@ -4,59 +4,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace seminar_7
+namespace HomeWork_8
 {
-    internal class Task_50_GrishaEdition
+    ///<summary>
+    /// Заполните спирально массив 4 на 4 числами от 1 до 16.
+    /// </summary>
+    internal class Task58
     {
-        public int SomeVar;
-
-        private int[,] numbers;
-        private Random random;
-
-        public void SetSomeVar(int numb)
+        /// <summary>
+        /// Запуск задачи 
+        /// </summary>
+        public static void Run()
         {
-            SomeVar = numb;
-        }
+            Console.WriteLine("Введите число x: ");
+            int numberX = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите число y: ");
+            int numberY = Convert.ToInt32(Console.ReadLine());
 
-        public int GetSomeVar()
-        {
-            return SomeVar;
-        }
 
-        public void Run()
-        {
-            random = new Random();
-            int rows = random.Next(4, 8);
-            int columns = random.Next(4, 8);
-            Console.WriteLine($"Массив размера {rows}x{columns}");
-            numbers = new int[rows, columns];
-            FillArrey();
-            PrintArrey();
+            var _2xArray = new int[numberX, numberY];
 
-            Console.WriteLine("Введите первый индекс: ");
-            int firstIndex = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Введите второй индекс: ");
-            int secondIndex = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine($"Искомый элемент [{firstIndex}, {secondIndex}] = {SearchElement(firstIndex, secondIndex)}");
-            
-            try
+            //for (int i = 0; i < )
             {
-                Console.WriteLine($"Искомый элемент [{firstIndex}, {secondIndex}] = {SearchElement(firstIndex, secondIndex)}");
+
             }
-            catch (Exception e)
-            {
-                Console.WriteLine($"Такого элемента не существует {e}");
-;           }
         }
+
 
         /// <summary>
         /// Заполнение двумерного массива
         /// </summary>
         /// <param name="numbers"></param>
-        void FillArrey()
+        static void FillArrey(int[,] numbers)
         {
 
+            Random random = new Random();
             int rows = numbers.GetLength(0);     // GetLength получить длинну(размерность строк)
             int columns = numbers.GetLength(1);  // GetLength получить длинну(размерность столбцов)
 
@@ -73,12 +55,11 @@ namespace seminar_7
             }
         }
 
-
         /// <summary>
         /// Вывод двумерного массива
         /// </summary>
         /// <param name="numbers"></param>
-        void PrintArrey()
+        static void PrintArrey(double[,] numbers)
         {
 
             int rows = numbers.GetLength(0); // GetLength получить длинну(размерность строк)
@@ -89,20 +70,10 @@ namespace seminar_7
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    Console.Write(numbers[i, j] + "\t");
+                    Console.Write(Math.Round(numbers[i, j], 1) + "\t");
                 }
                 Console.WriteLine();
             }
-        }
-
-        int SearchElement(int firstIndex, int secondIndex)
-        {
-            /*
-            if (firstIndex >= numbers.GetLength(1) || firstIndex < 0 && secondIndex >= numbers.GetLength(0) || secondIndex < 0)
-            {
-                throw new Exception("dsadsafsa");
-            }*/
-            return numbers[firstIndex, secondIndex];
         }
     }
 }

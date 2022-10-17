@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using seminar_9;
+
+//Task63.Run();
+Task65.Run();
+//Task67.Run();
+//Task69.Run();

@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using HomeWork_9;
+
+//Task64.Run();
+Task66.Run();
